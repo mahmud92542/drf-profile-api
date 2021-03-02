@@ -4,6 +4,7 @@ from .views import *
 
 router = DefaultRouter()
 router.register('profile',UserProfileViewSet)
+router.register('feed',UserProfileFeedViewSet)
 
 urlpatterns = [
 	path('api/',include(router.urls)),
